@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8"> <!--Codificação de caracters-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Utilizar a versão mais recente-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Pega o dispositivo e defini a escala -->
+  <title>Portifólio</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header class="cabecalho" id="elemento">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <img src="assets/simbolo.png" alt="logo web">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portifolio">Portfólio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="d-flex text-center w-100 vh-100 align-items-center container area-1">
+      <div class="row justify-content-between">
+        <div class="container__titulo col-12 col-md-6 col-xl-7 col-xxl-7">
+          <h1 class="text-center mb-5">Eleve seu negócio digital a outro nível <strong>com um Front-End de
+              qualidade!</strong></h1>
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="#" class="container__link" target="_blank">Currículo</a>
+            <a href="https://wa.me/5521975956657" target="_blank" class="container__link">Contato</a>
+          </div>
+        </div>
+        <div class="container__img  col-12 col-md-6 col-xl-5 col-xxl-5">
+          <img class="img rounded mx-auto d-block" src="assets/bruna2.jpeg" alt="Foto da Desenvolvedora Bruna"
+            width="200px">
+        </div>
+      </div>
+    </div>
+
+    <section id="sobre" class="d-flex flex-column vh-100 mb-5 justify-content-center section__teste mx-auto area-2">
+      <div class="card m-3 bg-dark rounded" style="max-width: 900px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-none d-md-block">
+            <img src="assets/bruna2.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title titulo">Quem sou eu?</h4>
+              <h6 style="color: white;">Desenvolvedora Front-End</h6>
+              <p style="color: white; font-size: 20px;" class="card-text">Olá! Me chamo Bruna Carla, tenho 19 anos e
+                moro em Nova Iguaçu-RJ.
+                Estudante de Desenvolvimento Web.
+                Vem conhecer um pouco mais a respeito das minhas habilidades e projetos aqui abaixo!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="habilidades" class="pb-5 mt-5 mb-4">
+        <h1 class="text-center d-block titulo">Habilidades</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="pt-3">
+            <div class="icon-container">
+              <img class="px-md-4" src="assets/html5-icon.png" alt="Ícone HTML5">
+              <img src="assets/css3-icon.png" alt="Ícone CSS3">
+              <img class="px-md-4" src="assets/js-icon.png" alt="Ícone JavaScript">
+            </div>
+            <div class="icon-container pt-4">
+              <img class="px-md-4 px-2" src="assets/git-icon.png" alt="Ícone Git">
+              <img class="px-md-4" src="assets/bootstrap-icon.png" alt="Ícone Bootstrap">
+              <img class="px-md-4 px-4" src="assets/figma.png" alt="Ícone Figma">
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+
+
+    <section id="portifolio" class="vh-100 area-3">
+      <h1 class="text-center pb-5 titulo">Portfólio de Projetos</h1>
+      <div class="container mt-5 mb-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/fashion-shop.png" class="d-block w-100" alt="Imagem 1">
+              <a href="https://fashion-shop-five.vercel.app/" target="_blank" class="ver-mais-btn btn btn-primary">Ver
+                Mais</a>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/portifolio.png" class="d-block w-100" alt="Imagem 2">
+              <a href="#" target="_blank" class="ver-mais-btn btn btn-primary">Ver Mais</a>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/projeto-compania-veterinaria.png" class="d-block w-100" alt="Imagem 3">
+              <a href="https://santiagobruna.github.io/Compania-Veterinaria/" target="_blank"
+                class="ver-mais-btn btn btn-primary">Ver Mais</a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="text-center">Acesse minhas redes: </h2>
+      <div class="text-center d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <!--Divisão/Agrupamento de elementos-->
+        <a class="apresentacao__links__navegacao" href="https://instagram.com/bruna_sntg0">
+          <img src="assets/instagram.png" alt="Ícone do Instagram">
+          <p>Instagram</p>
+        </a>
+
+        <a class="apresentacao__links__navegacao" href="https://github.com/santiagobruna">
+          <img src="assets/github.png" alt="Ícone do Github">
+          <p>Github</p>
+        </a>
+
+        <a class="apresentacao__links__navegacao " href="https://www.linkedin.com/in/brunacribeiro/">
+          <img src="assets/linkedin.png" alt="Ícone do Linkedin">
+          <p>Linkedin</p>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="text-center bg-dark">
+    <p class="py-3 mb-0 texto-rodape">2023 <i class="bi bi-c-circle"></i> Desenvolvido por Bruna Carla</p>
+  </footer>
+
+  <script src="script/script.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.add('carregado');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

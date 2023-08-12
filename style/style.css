@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria: #1A120B;
+    --cor-secundaria: #E5E5CB;
+    --cor-terciaria: #CC9544;
+    --cor-hover: #3C2A21;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background: var(--cor-primaria);
+    color: #F6F6F6;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+body.carregado {
+    opacity: 1;
+}
+
+/* Cabeçalho e Navegação */
+.cabecalho.show {
+    opacity: 1;
+}
+
+.navbar-toggler {
+    background-color: white;
+    color: #fff;
+}
+
+.nav-link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    color: white
+}
+
+.nav-link:hover {
+    color: var(--cor-terciaria);
+}
+
+.area-1,
+.area-2 {
+    visibility: hidden;
+}
+
+/* Container Apresentação */
+
+strong {
+    color: var(--cor-terciaria);
+}
+
+.container__link {
+    text-decoration: none;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    padding: 10px 40px;
+    color: #1A120B;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.container__link:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-hover)
+}
+
+.img {
+    transition: opacity 0.3s ease;
+}
+
+.img:hover {
+    opacity: 0.8;
+}
+
+.titulo {
+    color: var(--cor-terciaria);
+}
+
+.section__teste {
+    width: 325px;
+}
+
+/* Carousel */
+
+.carousel-item img {
+    transition: opacity 0.3s ease;
+}
+
+.carousel-item img:hover {
+    opacity: 0.8;
+}
+
+.ver-mais-btn {
+    position: absolute;
+    bottom: 50%;
+    /* Posição vertical no meio */
+    left: 50%;
+    /* Posição horizontal no meio */
+    transform: translate(-50%, 50%);
+    /* Centralização precisa */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar o botão ao passar o mouse */
+.ver-mais-btn.mostrar {
+    opacity: 0.8;
+}
+
+/* Redes Socias */
+.apresentacao__links, img, p {
+    display: inline-block;
+}
+.apresentacao__links__navegacao {
+    gap: 16px;
+    width: 40%;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    color: var(--cor-secundaria);
+}
+
+
+/* Rodapé */
+.texto-rodape {
+    font-size: 15px;
+    color: var(--cor-terciaria);
+}
+
+@media(min-width: 768px) {
+    .section__teste {
+        width: 696px;
+    }
+
+}
+
+/* Container do Card*/
+@media (max-width: 767.98px) {
+    .img {
+        padding-top: 3em;
+    }
+
+    .container__card {
+        width: 483px;
+    }
+
+    .img__sobre {
+        display: none;
+    }
+}
