@@ -15,7 +15,6 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
 
@@ -55,6 +54,7 @@ body.carregado {
   visibility: hidden;
 }
 
+
 /* Container Apresentação */
 
 strong {
@@ -92,6 +92,10 @@ strong {
   width: 325px;
 }
 
+/* Portfolio */
+#portifolio {
+  padding-top: 10rem;
+}
 /* Carousel */
 
 .carousel-item img {
