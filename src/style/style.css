@@ -111,6 +111,7 @@ body.carregado {
 
 .animated-image:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 /* Container about */
 .about_text {
