@@ -5,5 +5,5 @@ Bem-vindo(a) ao meu portfólio criativo e diversificado! Sou apaixonada por tran
 ### Tecnologias Utilizadas
 * Frontend: O projeto utiliza tecnologias front-end como **HTML, CSS, BOOTSTRAP5 e JavaScript** para criar a interface do usuário e interações dinâmicas.
 ### Link do Projeto
-Clique aqui para visualizar o projeto <https://portfolio-bay-sigma-18.vercel.app//>
+Clique aqui para visualizar o projeto <https://portfolio-bay-sigma-18.vercel.app/>
 
