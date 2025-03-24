@@ -81,9 +81,11 @@ body.carregado {
 
 /* Main Inicial */
 .links_about a {
+  border-radius: 10px;
   background-color: var(--cor-secundaria);
   color: var(--cor-terciaria);
   padding: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
 .links_about a:hover {
@@ -145,6 +147,7 @@ body.carregado {
   background-color: #E493B3;
   padding: 0.5rem;
   border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 .project-link a:hover {
   background-color:#EEA5A6;
