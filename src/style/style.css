@@ -117,7 +117,8 @@ body.carregado {
 }
 /* Container about */
 .about_text {
-  max-width: 600px;
+  width: 70%;
+  margin: 0 auto;
 }
 .container-contact a, span {
   color: #ffffff;
