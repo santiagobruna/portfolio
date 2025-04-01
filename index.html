@@ -20,7 +20,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/skills.css" />
     <!-- Favicon-->
     <link
       rel="shortcut icon"
@@ -69,7 +71,7 @@
       >
         <div class="container_about">
           <h1>Olá, me chamo Bruna Carla😊</h1>
-          <span class="mt-4 d-flex align-items-center gap-3">Desenvolvedora Front-End 
+          <span class="mt-4 mb-5 d-flex align-items-center gap-3">Desenvolvedora Front-End 
             <a href="https://www.linkedin.com/in/brunacribeiro/" target="_blank">
               <img src="./src/assets/linkedin.png" alt="Ícone do LinkedIn">
             </a>
@@ -78,23 +80,29 @@
             </a>
           </span>
           <div class="links_about mt-4">
-            <a style="color: #ffff; font-weight: bold;" class="text-decoration-none me-3" href="cv-front.pdf" target="_blank"
-              >Download CV</a
-            >
-            <a style="color: #ffff; font-weight: bold;" class="text-decoration-none" href="https://wa.me/5521975956657" target="_blank"
-              >Faça o seu Orçamento</a
-            >
+            <ul>
+              <li>
+                <a style="color: #ffff; font-weight: bold;" class="text-decoration-none me-3" href="cv-front.pdf" target="_blank"
+                  >Download CV</a
+                >
+              </li>
+              <li>
+                  <a style="color: #ffff; font-weight: bold;" class="text-decoration-none" href="https://wa.me/5521975956657" target="_blank"
+                >Faça o seu Orçamento</a>
+              </li>
+            </ul>
+            
           </div>
         </div>
         <div class="container_image">
           <img
           class="animated-image"
-            src="./src/assets/bruna.jpeg"
+            src="./src/assets/teste2.jpeg"
             alt="Uma foto da Desenvolvedora Bruna Carla, com óculos branco, utilizando blusa de gola alta preta e uma jaqueta jeans, cabelos cacheados e com luzes"
           />
         </div>
       </section>
-      <section id="sobre-mim" class="d-flex flex-column justify-content-center align-items-center align-items-center gap-3 area-1">
+      <section id="sobre-mim" class="d-flex flex-column justify-content-center align-items-center align-items-center gap-3 area-1 h-100">
         <div> 
           <h2 class="text-center mb-4 fs-2">Sobre mim</h2>
           <p class="about_text fs-4">
@@ -121,96 +129,185 @@
       
       </div>
       </section>
-      <!-- <section class="habilidades">
-        <h2>Principais Habilidades</h2>
-      <ul>
-          <li><img src="./src/assets/html5.svg" alt=""></li>
-          <li><img src="./src/assets/css3.svg" alt=""></li>
-          <li><img src="./src/assets/javascript-fill.svg" alt=""></li>
-          <li><img src="./src/assets/sass-.svg" alt=""></li>
-          <li><img src="./src/assets/react-fill.svg" alt=""></li>
-          <li><img src="./src/assets/bootstrap-brands.svg" alt=""></li>
-        </ul> -->
-      
-      <section  id="projetos" class="mb-5 area-2">
-        <h3 class="text-center fs-2 mb-5">Meus Projetos</h3>
-        <div class="d-flex justify-content-center flex-wrap gap-4 ">
-          <div class="card" style="width: 24rem;">
-            <img src="./src/assets/portfolio-profissional.png" class="card-img-top" alt="Imagem do projeto Portfolio Julia">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Pediatra</h5>
-              <p class="card-text">Criei este site para ajudar pediatras a apresentarem sua trajetória de forma profissional e acessível. O portfólio.
-              <p class="card-text">Tecnologias utilizadas: TypeScript, React,  Styled Component, Tailwind CSS.</p>
+      <section class="skills px-4 py-5 bg-dark mb-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Principais Habilidades</h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body text-center">
+                  <i class="fa-brands fa-react" style="font-size: 50px; color: #74C0FC;"></i>
+                  <h5 class="card-title">React</h5>
+                  <p class="card-text">Experiência com <strong>React</strong>, incluindo <strong>Hooks</strong> (useState, useEffect), <strong>React Router</strong> para navegação e <strong>Redux</strong> para gerenciamento de estado global.</p>
+                </div>
+              </div>
             </div>
-            <div class="project-link card-body">
-              <a href="https://portfolio-julia-two.vercel.app/" target="_blank" class="card-link">Ver projeto</a>
-              <a href="https://github.com/santiagobruna/portfolio-julia" target="_blank" class="card-link">Repositório</a>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fas fa-code mb-3" style="text-align: center; font-size: 50px;"></i>
+                  <h5 class="card-title">TypeScript</h5>
+                  <p class="card-text">Adição de tipagem estática ao JavaScript, melhorando a robustez e a manutenção do código em projetos de maior escala.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 24rem;">
-            <img src="./src/assets/projeto-devburguer.png" class="card-img-top" alt="Imagem do projeto Calculadora IMC">
-            <div class="card-body">
-              <h5 class="card-title">Projeto Dev Burguer</h5>
-              <p class="card-text">Uma loja virtual de uma Hamburgueria. A Dev hamburgueria é mais do que uma simples hamburgueria, é uma experiência gastronômica inovadora, onde a tradição e a modernidade se encontram para proporcionar aos nossos clientes o melhor hambúrguer artesanal da cidade.</p>
-              <p class="card-text">Tecnologias utilizadas: HTML, CSS,  JavaScript</p>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fa-brands fa-node-js" style="font-size: 50px; color: #2d9a70;"></i>
+                  <h5 class="card-title">Node.js</h5>
+                  <p class="card-text">Desenvolvimento de back-end com Node.js, incluindo a criação de APIs RESTful e integração com bancos de dados.</p>
+                </div>
+              </div>
             </div>
-            <div class="project-link card-body">
-              <a href="https://devburguer-iota.vercel.app" target="_blank" class="card-link">Ver projeto</a>
-              <a href="https://github.com/santiagobruna/devburguer" target="_blank" class="card-link">Repositório</a>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fa-brands fa-js" style="font-size: 50px; color: #FFD43B;"></i>
+                  <h5 class="card-title">JavaScript</h5>
+                  <p class="card-text">JavaScript é uma linguagem de programação essencial para o desenvolvimento web. Ela permite adicionar interatividade, manipulação de elementos DOM e comunicação assíncrona com o servidor.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 24rem;">
-            <img src="./src/assets/petDev.png" class="card-img-top" alt="Imagem do projeto PetDev">
-            <div class="card-body">
-              <h5 class="card-title">Projeto PetDev</h5>
-              <p class="card-text"> Este site foi criado para orientar você, cliente valioso da PetDev, sobre todos os aspectos do nosso serviço excepcional de cuidados veterinários para animais de estimação.</p>
-              <p class="card-text">Tecnologias utilizadas: NextJS, TypeScript, JavaScript, Tailwind CSS</p>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fa-brands fa-python" style="font-size: 50px; color: #1d4d72;"></i>
+                  <h5 class="card-title">Python</h5>
+                  <p class="card-text">Python é uma linguagem de programação de alto nível, conhecida pela sua simplicidade e legibilidade. É amplamente utilizada em diversas áreas, como desenvolvimento web, automação, análise de dados.</p>
+                </div>
+              </div>
             </div>
-            <div class="project-link card-body">
-              <a href="https://pet-dev-alpha.vercel.app/" target="_blank" class="card-link">Ver projeto</a>
-              <a href="https://github.com/santiagobruna/petDev" target="_blank" class="card-link">Repositório</a>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fa-brands fa-sass" style="font-size: 50px; color: #d737b5;"></i>
+                  <h5 class="card-title">Sass</h5>
+                  <p class="card-text">Sass é uma extensão do CSS que permite usar variáveis, aninhamento de regras, mixins e outras funcionalidades, tornando o código CSS mais poderoso e organizado.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 24rem;">
-            <img src="./src/assets/disney+.png" class="card-img-top" alt="Imagem do projeto Disney+">
-            <div class="card-body">
-              <h5 class="card-title">Clone Disney+</h5>
-              <p class="card-text">Neste projeto, criei um clone da plataforma de streaming Disney Plus. O objetivo foi replicar a interface intuitiva e responsiva da plataforma, com foco em uma navegação fluída e otimização de performance.</p>
-              <p class="card-text">Tecnologias utilizadas: HTML5, CSS3, JavaScript, Gulp, Sass</p>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body">
+                  <i class="fa-brands fa-bootstrap" style="font-size: 50px; color: #5c46a0;"></i>
+                  <h5 class="card-title">Bootstrap</h5>
+                  <p class="card-text">Bootstrap é uma das frameworks front-end mais populares, oferecendo componentes prontos, como botões, formulários e navegação, além de um sistema de grid responsivo.</p>
+                </div>
+              </div>
             </div>
-           
-            <div class="project-link card-body">
-              <a href="https://clone-disneyplus-delta-six.vercel.app/" target="_blank" class="card-link">Ver projeto</a>
-              <a href="https://github.com/santiagobruna/clone_disneyplus" target="_blank" class="card-link">Repositório</a>
-            </div>
-          </div>
-          <div class="card" style="width: 24rem;">
-            <img src="./src/assets/linktree_nail.png" class="card-img-top" alt="Imagem do projeto Linktree Nail">
-            <div class="card-body">
-              <h5 class="card-title">Projeto Linktree</h5>
-              <p class="card-text">A landing page da Rillary foi criada para apresentar seus serviços de design de unhas de maneira prática e atraente. Utilizando uma abordagem simples e eficaz, a página reúne os principais meios de contato e links para redes sociais em um layout moderno e elegante.</p>
-              <p class="card-text">Tecnologias utilizadas: HTML, CSS, Figma, SEO Básico, Responsividade</p>
-            </div>
-            <div class="project-link card-body">
-              <a href="https://linktree-barbio-nail.vercel.app/" target="_blank" class="card-link">Ver projeto</a>
-              <a href="https://github.com/santiagobruna/linktree_nail" target="_blank" class="card-link">Repositório</a>
-            </div>
-          </div>
-          <div class="card" style="width: 24rem;">
-            <img src="./src/assets/blog.png" class="card-img-top" alt="Imagem do projeto ProgamBlog">
-            <div class="card-body">
-              <h5 class="card-title">Projeto ProgramBlog</h5>
-              <p class="card-text">Este site foi criado com o objetivo de fornecer informações sobre programação.</p>
-              <p class="card-text">Tecnologias utilizadas: React, HTML, CSS, JavaScript, TypeScript, Styled Component, Node.js</p>
-            </div>
-            <div class="project-link card-body">
-              <a href="https://program-blog.vercel.app/" target="_blank" class="card-link">Ver projeto</a>
-              <a href="https://github.com/santiagobruna/programBlog" target="_blank" class="card-link">Repositório</a>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card text-center shadow-sm">
+                <div class="card-body">
+                  <img src="./src/assets/tailwind.svg" alt="Ícone Tailwind" class="mb-3" style="width: 50px; height: 50px; display: block; margin: 0 auto;">
+                  <h5 class="card-title">Tailwind CSS</h5>
+                  <p class="card-text">Tailwind CSS é uma framework utilitária de CSS que oferece classes pré-configuradas para construção de layouts e componentes de maneira rápida e customizável.</p>
+                </div>
+              </div>
             </div>
           </div>
-          
         </div>
       </section>
+      <section class="projects px-4 py-5 bg-dark">
+        <div class="container">
+          <h3 class="text-center fs-2 mb-5 text-light">Meus Projetos</h3>
+          <div class="row justify-content-center g-4">
+      
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./src/assets/portfolio-profissional.png" class="card-img-top" alt="Imagem do projeto Portfolio Julia">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Portfolio Pediatra</h5>
+                  <p class="card-text flex-grow-1">Criei este site para ajudar pediatras a apresentarem sua trajetória profissional.</p>
+                  <p class="card-text"><strong>Tecnologias:</strong> TypeScript, React, Styled Component, Tailwind CSS.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="https://portfolio-julia-two.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
+                  <a href="https://github.com/santiagobruna/portfolio-julia" target="_blank" class="btn btn-outline-secondary">Repositório</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./src/assets/projeto-devburguer.png" class="card-img-top" alt="Imagem do projeto Dev Burguer">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Projeto Dev Burguer</h5>
+                  <p class="card-text flex-grow-1">Loja virtual de uma Hamburgueria artesanal.</p>
+                  <p class="card-text"><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="https://devburguer-iota.vercel.app" target="_blank" class="btn btn-primary">Projeto</a>
+                  <a href="https://github.com/santiagobruna/devburguer" target="_blank" class="btn btn-outline-secondary">Repositório</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./src/assets/petDev.png" class="card-img-top" alt="Imagem do projeto PetDev">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Projeto PetDev</h5>
+                  <p class="card-text flex-grow-1">Site sobre serviços veterinários.</p>
+                  <p class="card-text"><strong>Tecnologias:</strong> NextJS, TypeScript, Tailwind CSS</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="https://pet-dev-alpha.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
+                  <a href="https://github.com/santiagobruna/petDev" target="_blank" class="btn btn-outline-secondary">Repositório</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./src/assets/agenda-de-contatos.png" class="card-img-top" alt="Imagem do projeto Agenda de Contatos">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Agenda de Contatos</h5>
+                  <p class="card-text flex-grow-1">Aplicação para gerenciar contatos usando Redux.</p>
+                  <p class="card-text"><strong>Tecnologias:</strong> React, Redux, React Router, TypeScript</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="https://agenda-de-contatos-kappa-virid.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
+                  <a href="https://github.com/santiagobruna/agenda-de-contatos" target="_blank" class="btn btn-outline-secondary">Repositório</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./src/assets/linktree_nail.png" class="card-img-top" alt="Imagem do projeto Linktree Nail">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Projeto Linktree</h5>
+                  <p class="card-text flex-grow-1">Landing page para serviços de design de unhas.</p>
+                  <p class="card-text"><strong>Tecnologias:</strong> HTML, CSS, Figma, SEO</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="https://linktree-barbio-nail.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
+                  <a href="https://github.com/santiagobruna/linktree_nail" target="_blank" class="btn btn-outline-secondary">Repositório</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img src="./src/assets/blog.png" class="card-img-top" alt="Imagem do projeto ProgramBlog">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Projeto ProgramBlog</h5>
+                  <p class="card-text flex-grow-1">Blog sobre programação e tecnologia.</p>
+                  <p class="card-text"><strong>Tecnologias:</strong> React, TypeScript, Node.js</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <a href="https://program-blog.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
+                  <a href="https://github.com/santiagobruna/programBlog" target="_blank" class="btn btn-outline-secondary">Repositório</a>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      
       <section id="servico" class="d-flex justify-content-center align-items-center vh-100 area-3">
         <div>
           <h2 class="text-center mb-5">Serviços</h2>
