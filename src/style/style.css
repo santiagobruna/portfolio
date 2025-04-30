@@ -29,16 +29,8 @@ body.carregado {
   opacity: 1;
 }
 
-/* txt animado */
-.container_about h1 {
-  display: block;
-  border-right: 8px solid var(--cor-secundaria);
-  width: 26ch;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: mark .5s step-end infinite, write 7s steps(22,end) infinite;
-}
 
+/* 
 @keyframes mark {
   50%{
     border-right-color: transparent ;
@@ -61,7 +53,7 @@ body.carregado {
   100% {
     width: 0;
   }
-}
+} */
 @media (max-width: 768px) {
   .container_about h1 {
     font-size: 1.3em; 

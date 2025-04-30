@@ -9,6 +9,8 @@
     <!--Pega o dispositivo e defini a escala -->
     <title>Bruna Carla</title>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -22,6 +24,7 @@
     />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/home.css" />
     <link rel="stylesheet" href="./src/style/skills.css" />
     <!-- Favicon-->
     <link
@@ -29,115 +32,104 @@
       href="src/assets/logo-bruna.svg"
       type="image/x-icon"
     />
+ 
   </head>
   <body>
     <header>
-      <nav class="header navbar navbar-expand-lg  container-fluid">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/src/assets/simbolo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav class="bg-pink-800 text-white shadow-md">
+        <div class="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
+          <div class="flex  items-center gap-4">
+            <a href="#" class="flex items-center">
+              <img src="/src/assets/simbolo.png" alt="Logo" class="h-10 w-auto"> 
+            </a>
+            <h1 class="text-2xl">Bruna Santiago</h1>
+          </div>
+          
+          <button class="lg:hidden text-white focus:outline-none" id="menu-toggle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
           </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#inicio">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sobre-mim">Sobre mim</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#projetos" id="navbarScrollingDropdown" role="button"  aria-expanded="false">
-                  Projetos
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#sobre-mim" id="navbarScrollingDropdown" role="button"  aria-expanded="false">
-                  Contato
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servico" tabindex="-1" >Serviços</a>
-              </li>
-            </ul>
+          <div class="hidden lg:flex space-x-6">
+            <a href="#inicio" class="hover:text-pink-400">Home</a>
+            <a href="#sobre-mim" class="hover:text-pink-400">Sobre</a>
+            <a href="#skills" class="hover:text-pink-400">Habilidades</a>
+            <a href="#projetos" class="hover:text-pink-400">Projetos</a>
+            <a href="#servicos" class="hover:text-pink-400">Serviços</a>
+            <a href="#contato" class="hover:text-pink-400">Contato</a>
           </div>
         </div>
-      </nav>
-      </div>
+        <div class="lg:hidden bg-pink-800 text-white space-y-4 py-4 px-6 hidden" id="menu-mobile">
+          <a href="#inicio" class="block hover:text-pink-400">Home</a>
+          <a href="#sobre-mim" class="block hover:text-pink-400">Sobre</a>
+          <a href="#skills" class="block hover:text-pink-400">Habilidades</a>
+          <a href="#projetos" class="block hover:text-pink-400">Projetos</a>
+          <a href="#servicos" class="block hover:text-pink-400">Serviços</a>
+          <a href="#contato" class="block hover:text-pink-400">Contato</a>
+        </div>
+      </nav> 
     </header>
     <main class="px-4">
-      <section id="inicio"
-        class="mx-auto  d-flex justify-content-around align-items-center flex-md-row flex-column vh-100"
+      <section class="home" id="inicio"
       >
-        <div class="container_about">
-          <h1>Olá, me chamo Bruna Carla😊</h1>
-          <span class="mt-4 mb-5 d-flex align-items-center gap-3">Desenvolvedora Front-End 
-            <a href="https://www.linkedin.com/in/brunacribeiro/" target="_blank">
-              <img src="./src/assets/linkedin.png" alt="Ícone do LinkedIn">
-            </a>
-            <a href="https://github.com/santiagobruna" target="_blank">
-              <img src="./src/assets/github.png" alt="Ícone do Github">
-            </a>
-          </span>
-          <div class="links_about mt-4">
-            <ul>
-              <li>
-                <a style="color: #ffff; font-weight: bold;" class="text-decoration-none me-3" href="cv-front.pdf" target="_blank"
-                  >Download CV</a
-                >
-              </li>
-              <li>
-                  <a style="color: #ffff; font-weight: bold;" class="text-decoration-none" href="https://wa.me/5521975956657" target="_blank"
-                >Faça o seu Orçamento</a>
-              </li>
-            </ul>
-            
+          <div class="container-about">
+            <div>
+              <h1>Bruna Santiago</h1>
+              <span>Desenvolvedora Front-end</span>
+              <div class="mt-4">
+                <div class="flex gap-6">
+                  <a rel="noopener noreferrer" href="https://github.com/santiagobruna" class="bg-pink-800 hover:bg-pink-700 text-white px-4 py-2 rounded-xl transition-all duration-300" target="_blank">
+                    <i class="fab fa-github text-2xl"></i>
+                  </a>
+                  <a rel="noopener noreferrer" href="https://www.linkedin.com/in/brunacribeiro/" class="bg-pink-800 hover:bg-pink-700 text-white px-4 py-2 rounded-xl transition-all duration-300" target="_blank">
+                    <i class="fab fa-linkedin-in text-1xl"></i>
+                  </a>
+                  <a rel="noopener noreferrer" id="whatsapp-link" href="https://wa.me/5521975956657" class="bg-pink-800 hover:bg-pink-700 text-white px-4 py-2 rounded-xl transition-all duration-300" target="_blank">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                  </a>
+                  <a rel="noopener noreferrer" href="https://instagram.com/bruna_dev77"   class="bg-pink-800 hover:bg-pink-700 text-white px-4 py-2 rounded-xl transition-all duration-300" target="_blank">
+                    <i class="fab fa-instagram text-2xl"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container-img-about">
+              <img src="./src/assets/teste2.jpeg" alt="Imagem da Desenvolvedora Bruna, de óculos e blusa branca" >
+            </div>
           </div>
-        </div>
-        <div class="container_image">
-          <img
-          class="animated-image"
-            src="./src/assets/teste2.jpeg"
-            alt="Uma foto da Desenvolvedora Bruna Carla, com óculos branco, utilizando blusa de gola alta preta e uma jaqueta jeans, cabelos cacheados e com luzes"
-          />
-        </div>
       </section>
-      <section id="sobre-mim" class="d-flex flex-column justify-content-center align-items-center align-items-center gap-3 area-1 h-100">
-        <div> 
-          <h2 class="text-center mb-4 fs-2">Sobre mim</h2>
-          <p class="about_text fs-4">
-            Olá! Sou Bruna Carla, tenho 20 anos e moro em Nova Iguaçu, Rio de Janeiro. Minha jornada na tecnologia começou com minha paixão por jogos online, o que despertou minha curiosidade pelo desenvolvimento. Durante minha jornada, cursei Análise e Desenvolvimento de Sistemas e me especializei em Desenvolvimento Web, buscando aprimorar minhas habilidades por meio de cursos na Udemy, Alura e eventos como os da Rocketseat.
+      <section id="sobre-mim" class="flex flex-col items-center justify-center gap-8 h-full py-12 px-4">
+        <div class="text-center max-w-3xl">
+          <h2 class="text-4xl font-bold mb-6">Sobre mim</h2>
+          <p class="text-base sm:text-lg leading-relaxed text-left">
+            Olá! Sou Bruna Carla, tenho 20 anos e moro em Nova Iguaçu, Rio de Janeiro. Minha jornada na tecnologia começou com minha paixão por jogos online, o que despertou minha curiosidade pelo desenvolvimento. 
+            Sou formada em Análise e Desenvolvimento de Sistemas e me especializei em Desenvolvimento Web, com foco em construir interfaces modernas, acessíveis e responsivas. Tenho conhecimentos sólidos em HTML, CSS, JavaScript e frameworks como React. Além disso, ampliei minha formação com cursos na Udemy e Alura, e participei de eventos como o Discover da Rocketseat, onde aprofundei meus estudos em tecnologias web e boas práticas de desenvolvimento.
           </p>
         </div>
-        <div class="container-contact row justify-content-around mt-5 gap-5">
-          <div class="col-sm-12 col-md-4 col-lg-3 d-flex flex-column align-items-center mb-3">
-              <img src="./src/assets/mail.svg" alt="ícone e-mail">
-              <span>E-mail</span>
-              <a href="mailto:santiagobruna147@gmail.com" target="_blank">santiagobruna147@gmail.com</a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-3 d-flex flex-column align-items-center mb-3">
-              <img src="./src/assets/instagram.svg" alt="ícone instagram">
-              <span>Instagram</span>
-              <a href="https://instagram.com/bruna_dev77" target="_blank">@bruna_dev77</a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-3 d-flex flex-column align-items-center mb-3">
-              <img src="./src/assets/whatsapp.png" alt="ícone telefone">
-              <span>WhatsApp</span>
-              <span><a target="_blank" href="https://wa.me/5521975956657">(21)97595-6657</a></span>
-          </div>
-      </div>
       
-      </div>
+        <div class="flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-pink-800 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h5l5 5v11a2 2 0 01-2 2z" />
+          </svg>
+          <span class="font-medium text-lg mb-1">Currículo</span>
+          <a href="cv-front.pdf" 
+             download 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="bg-pink-800 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-colors duration-300">
+            Baixar meu Currículo
+          </a>
+        </div>
       </section>
-      <section class="skills px-4 py-5 bg-dark mb-5">
+      <section id="skills"  class="skills px-4 py-5 bg-dark mb-5">
         <div class="container">
-          <h2 class="text-center mb-4">Principais Habilidades</h2>
+          <h2 class="text-center mb-4 text-2xl">Principais Habilidades</h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
               <div class="card text-center shadow-sm">
                 <div class="card-body text-center">
                   <i class="fa-brands fa-react" style="font-size: 50px; color: #74C0FC;"></i>
-                  <h5 class="card-title">React</h5>
+                  <h5 class="card-title font-bold">React</h5>
                   <p class="card-text">Experiência com <strong>React</strong>, incluindo <strong>Hooks</strong> (useState, useEffect), <strong>React Router</strong> para navegação e <strong>Redux</strong> para gerenciamento de estado global.</p>
                 </div>
               </div>
@@ -146,7 +138,7 @@
               <div class="card text-center shadow-sm">
                 <div class="card-body">
                   <i class="fas fa-code mb-3" style="text-align: center; font-size: 50px;"></i>
-                  <h5 class="card-title">TypeScript</h5>
+                  <h5 class="card-title font-bold">TypeScript</h5>
                   <p class="card-text">Adição de tipagem estática ao JavaScript, melhorando a robustez e a manutenção do código em projetos de maior escala.</p>
                 </div>
               </div>
@@ -155,7 +147,7 @@
               <div class="card text-center shadow-sm">
                 <div class="card-body">
                   <i class="fa-brands fa-node-js" style="font-size: 50px; color: #2d9a70;"></i>
-                  <h5 class="card-title">Node.js</h5>
+                  <h5 class="card-title font-bold">Node.js</h5>
                   <p class="card-text">Desenvolvimento de back-end com Node.js, incluindo a criação de APIs RESTful e integração com bancos de dados.</p>
                 </div>
               </div>
@@ -164,7 +156,7 @@
               <div class="card text-center shadow-sm">
                 <div class="card-body">
                   <i class="fa-brands fa-js" style="font-size: 50px; color: #FFD43B;"></i>
-                  <h5 class="card-title">JavaScript</h5>
+                  <h5 class="card-title font-bold">JavaScript</h5>
                   <p class="card-text">JavaScript é uma linguagem de programação essencial para o desenvolvimento web. Ela permite adicionar interatividade, manipulação de elementos DOM e comunicação assíncrona com o servidor.</p>
                 </div>
               </div>
@@ -173,7 +165,7 @@
               <div class="card text-center shadow-sm">
                 <div class="card-body">
                   <i class="fa-brands fa-python" style="font-size: 50px; color: #1d4d72;"></i>
-                  <h5 class="card-title">Python</h5>
+                  <h5 class="card-title font-bold">Python</h5>
                   <p class="card-text">Python é uma linguagem de programação de alto nível, conhecida pela sua simplicidade e legibilidade. É amplamente utilizada em diversas áreas, como desenvolvimento web, automação, análise de dados.</p>
                 </div>
               </div>
@@ -182,7 +174,7 @@
               <div class="card text-center shadow-sm">
                 <div class="card-body">
                   <i class="fa-brands fa-sass" style="font-size: 50px; color: #d737b5;"></i>
-                  <h5 class="card-title">Sass</h5>
+                  <h5 class="card-title font-bold">Sass</h5>
                   <p class="card-text">Sass é uma extensão do CSS que permite usar variáveis, aninhamento de regras, mixins e outras funcionalidades, tornando o código CSS mais poderoso e organizado.</p>
                 </div>
               </div>
@@ -191,7 +183,7 @@
               <div class="card text-center shadow-sm">
                 <div class="card-body">
                   <i class="fa-brands fa-bootstrap" style="font-size: 50px; color: #5c46a0;"></i>
-                  <h5 class="card-title">Bootstrap</h5>
+                  <h5 class="card-title font-bold">Bootstrap</h5>
                   <p class="card-text">Bootstrap é uma das frameworks front-end mais populares, oferecendo componentes prontos, como botões, formulários e navegação, além de um sistema de grid responsivo.</p>
                 </div>
               </div>
@@ -200,7 +192,7 @@
               <div class="card text-center shadow-sm">
                 <div class="card-body">
                   <img src="./src/assets/tailwind.svg" alt="Ícone Tailwind" class="mb-3" style="width: 50px; height: 50px; display: block; margin: 0 auto;">
-                  <h5 class="card-title">Tailwind CSS</h5>
+                  <h5 class="card-title font-bold">Tailwind CSS</h5>
                   <p class="card-text">Tailwind CSS é uma framework utilitária de CSS que oferece classes pré-configuradas para construção de layouts e componentes de maneira rápida e customizável.</p>
                 </div>
               </div>
@@ -208,98 +200,104 @@
           </div>
         </div>
       </section>
-      <section class="projects px-4 py-5 bg-dark">
-        <div class="container">
-          <h3 class="text-center fs-2 mb-5 text-light">Meus Projetos</h3>
-          <div class="row justify-content-center g-4">
       
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
-                <img src="./src/assets/portfolio-profissional.png" class="card-img-top" alt="Imagem do projeto Portfolio Julia">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Portfolio Pediatra</h5>
-                  <p class="card-text flex-grow-1">Criei este site para ajudar pediatras a apresentarem sua trajetória profissional.</p>
-                  <p class="card-text"><strong>Tecnologias:</strong> TypeScript, React, Styled Component, Tailwind CSS.</p>
-                </div>
-                <div class="card-footer d-flex justify-content-between">
-                  <a href="https://portfolio-julia-two.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
-                  <a href="https://github.com/santiagobruna/portfolio-julia" target="_blank" class="btn btn-outline-secondary">Repositório</a>
-                </div>
+      <section id="projetos" class="bg-dark px-4 py-10">
+        <div class="max-w-7xl mx-auto">
+          <h3 class="text-center text-3xl font-semibold text-white mb-10">Meus Projetos</h3>
+      
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Projeto 1 -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col h-full">
+              <img src="./src/assets/portfolio-profissional.png" alt="Imagem do projeto Portfolio Julia" class="rounded-t-lg">
+              <div class="p-4 flex flex-col flex-grow">
+                <h5 class="text-lg font-bold mb-2 text-black">Portfolio Pediatra</h5>
+                <p class="text-gray-700 flex-grow"> Um site criado especialmente para pediatras que desejam destacar sua carreira, gerar confiança em seus pacientes e facilitar o contato profissional com um visual moderno e responsivo.</p>
+                <p class="text-sm text-gray-600 mt-2"><strong>Tecnologias:</strong> TypeScript, React, Styled Component, Tailwind CSS.</p>
+              </div>
+              <div class="px-4 py-3 flex justify-between">
+                <a href="https://portfolio-julia-two.vercel.app/" target="_blank" class="bg-pink-700 text-white px-4 py-2 rounded hover:bg-pink-600">Projeto</a>
+                <a href="https://github.com/santiagobruna/portfolio-julia" target="_blank" class="border border-gray-500 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">Repositório</a>
               </div>
             </div>
       
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
-                <img src="./src/assets/projeto-devburguer.png" class="card-img-top" alt="Imagem do projeto Dev Burguer">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Projeto Dev Burguer</h5>
-                  <p class="card-text flex-grow-1">Loja virtual de uma Hamburgueria artesanal.</p>
-                  <p class="card-text"><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-                </div>
-                <div class="card-footer d-flex justify-content-between">
-                  <a href="https://devburguer-iota.vercel.app" target="_blank" class="btn btn-primary">Projeto</a>
-                  <a href="https://github.com/santiagobruna/devburguer" target="_blank" class="btn btn-outline-secondary">Repositório</a>
-                </div>
+            <!-- Projeto 2 -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col h-full">
+              <img src="./src/assets/projeto-devburguer.png" alt="Imagem do projeto Dev Burguer" class="rounded-t-lg">
+              <div class="p-4 flex flex-col flex-grow">
+                <h5 class="text-lg font-bold mb-2  text-black">Projeto Dev Burguer</h5>
+                <p class="text-gray-700 flex-grow">
+                  Desenvolvi esta loja virtual para uma hamburgueria artesanal. O projeto combina um visual moderno, navegação intuitiva e integração com o WhatsApp para pedidos rápidos e personalizados, conectando o cliente diretamente com o sabor autêntico do hambúrguer artesanal.
+                </p>
+                <p class="text-sm text-gray-600 mt-2"><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+              </div>
+              <div class="px-4 py-3 flex justify-between">
+                <a href="https://devburguer-iota.vercel.app" target="_blank" class="bg-pink-700 text-white px-4 py-2 rounded hover:bg-pink-600">Projeto</a>
+                <a href="https://github.com/santiagobruna/devburguer" target="_blank" class="border border-gray-500 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">Repositório</a>
               </div>
             </div>
       
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
-                <img src="./src/assets/petDev.png" class="card-img-top" alt="Imagem do projeto PetDev">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Projeto PetDev</h5>
-                  <p class="card-text flex-grow-1">Site sobre serviços veterinários.</p>
-                  <p class="card-text"><strong>Tecnologias:</strong> NextJS, TypeScript, Tailwind CSS</p>
-                </div>
-                <div class="card-footer d-flex justify-content-between">
-                  <a href="https://pet-dev-alpha.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
-                  <a href="https://github.com/santiagobruna/petDev" target="_blank" class="btn btn-outline-secondary">Repositório</a>
-                </div>
+            <!-- Projeto 3 -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col h-full">
+              <img src="./src/assets/petDev.png" alt="Imagem do projeto PetDev" class="rounded-t-lg">
+              <div class="p-4 flex flex-col flex-grow">
+                <h5 class="text-lg font-bold mb-2  text-black">Projeto PetDev</h5>
+                <p class="text-gray-700 flex-grow">
+                  Site desenvolvido para serviços veterinários, com foco em agendamentos online e informações essenciais para o bem-estar dos animais. Um espaço intuitivo para oferecer cuidados de qualidade para os pets.
+                </p>
+                <p class="text-sm text-gray-600 mt-2"><strong>Tecnologias:</strong> NextJS, TypeScript, Tailwind CSS</p>
+              </div>
+              <div class="px-4 py-3 flex justify-between">
+                <a href="https://pet-dev-alpha.vercel.app/" target="_blank" class="bg-pink-700 text-white px-4 py-2 rounded hover:bg-pink-600">Projeto</a>
+                <a href="https://github.com/santiagobruna/petDev" target="_blank" class="border border-gray-500 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">Repositório</a>
               </div>
             </div>
       
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
-                <img src="./src/assets/agenda-de-contatos.png" class="card-img-top" alt="Imagem do projeto Agenda de Contatos">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Agenda de Contatos</h5>
-                  <p class="card-text flex-grow-1">Aplicação para gerenciar contatos usando Redux.</p>
-                  <p class="card-text"><strong>Tecnologias:</strong> React, Redux, React Router, TypeScript</p>
-                </div>
-                <div class="card-footer d-flex justify-content-between">
-                  <a href="https://agenda-de-contatos-kappa-virid.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
-                  <a href="https://github.com/santiagobruna/agenda-de-contatos" target="_blank" class="btn btn-outline-secondary">Repositório</a>
-                </div>
+            <!-- Projeto 4 -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col h-full">
+              <img src="./src/assets/agenda-de-contatos.png" alt="Imagem do projeto Agenda de Contatos" class="rounded-t-lg">
+              <div class="p-4 flex flex-col flex-grow">
+                <h5 class="text-lg font-bold mb-2  text-black">Agenda de Contatos</h5>
+                <p class="text-gray-700 flex-grow">
+                  Aplicação web desenvolvida para gerenciar e organizar contatos de forma eficiente, utilizando Redux para o gerenciamento centralizado de estado e garantindo uma experiência de usuário fluída e responsiva.
+                </p>
+                <p class="text-sm text-gray-600 mt-2"><strong>Tecnologias:</strong> React, Redux, React Router, TypeScript</p>
+              </div>
+              <div class="px-4 py-3 flex justify-between">
+                <a href="https://agenda-de-contatos-kappa-virid.vercel.app/" target="_blank" class="bg-pink-700 text-white px-4 py-2 rounded hover:bg-pink-600">Projeto</a>
+                <a href="https://github.com/santiagobruna/agenda-de-contatos" target="_blank" class="border border-gray-500 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">Repositório</a>
               </div>
             </div>
       
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
-                <img src="./src/assets/tarefas.png" class="card-img-top" alt="Imagem do projeto Gerenciador de tarefas">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Gerenciador de tarefas com filtros inteligentes</h5>
-                  <p class="card-text flex-grow-1">Aplicação desenvolvida com React para praticar conceitos de estados, props, componentes reutilizáveis e lógica de filtros.</p>
-                  <p class="card-text"><strong>Tecnologias:</strong> TypeScript, React, Redux, Router, Styled Component</p>
-                </div>
-                <div class="card-footer d-flex justify-content-between">
-                  <a href="https://minhas-tarefas-two-gules.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
-                  <a href="https://github.com/santiagobruna/minhas-tarefas" target="_blank" class="btn btn-outline-secondary">Repositório</a>
-                </div>
+            <!-- Projeto 5 -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col h-full">
+              <img src="./src/assets/tarefas.png" alt="Imagem do projeto Gerenciador de tarefas" class="rounded-t-lg">
+              <div class="p-4 flex flex-col flex-grow">
+                <h5 class="text-lg font-bold mb-2  text-black">Gerenciador de tarefas com filtros inteligentes</h5>
+                <p class="text-gray-700 flex-grow">
+                  Aplicação construída com React, focada em praticar o uso de estados, props e implementar lógica de filtros dinâmicos, proporcionando uma experiência de interação eficiente e intuitiva.
+                </p>
+                <p class="text-sm text-gray-600 mt-2"><strong>Tecnologias:</strong> TypeScript, React, Redux, Router, Styled Component</p>
+              </div>
+              <div class="px-4 py-3 flex justify-between">
+                <a href="https://minhas-tarefas-two-gules.vercel.app/" target="_blank" class="bg-pink-700 text-white px-4 py-2 rounded hover:bg-pink-600">Projeto</a>
+                <a href="https://github.com/santiagobruna/minhas-tarefas" target="_blank" class="border border-gray-500 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">Repositório</a>
               </div>
             </div>
       
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
-                <img src="./src/assets/blog.png" class="card-img-top" alt="Imagem do projeto ProgramBlog">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Projeto ProgramBlog</h5>
-                  <p class="card-text flex-grow-1">Blog sobre programação e tecnologia.</p>
-                  <p class="card-text"><strong>Tecnologias:</strong> React, TypeScript, Node.js</p>
-                </div>
-                <div class="card-footer d-flex justify-content-between">
-                  <a href="https://program-blog.vercel.app/" target="_blank" class="btn btn-primary">Ver projeto</a>
-                  <a href="https://github.com/santiagobruna/programBlog" target="_blank" class="btn btn-outline-secondary">Repositório</a>
-                </div>
+            <!-- Projeto 6 -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col h-full">
+              <img src="./src/assets/blog.png" alt="Imagem do projeto ProgramBlog" class="rounded-t-lg">
+              <div class="p-4 flex flex-col flex-grow">
+                <h5 class="text-lg font-bold mb-2  text-black">Projeto ProgramBlog</h5>
+                <p class="text-gray-700 flex-grow">
+                  Blog dedicado a compartilhar conteúdos sobre programação, tecnologias emergentes e boas práticas no desenvolvimento de software, com foco em fornecer insights valiosos para desenvolvedores de todos os níveis.  
+                </p>
+                <p class="text-sm text-gray-600 mt-2"><strong>Tecnologias:</strong> React, TypeScript, Node.js</p>
+              </div>
+              <div class="px-4 py-3 flex justify-between">
+                <a href="https://program-blog.vercel.app/" target="_blank" class="bg-pink-700 text-white px-4 py-2 rounded hover:bg-pink-600">Projeto</a>
+                <a href="https://github.com/santiagobruna/programBlog" target="_blank" class="border border-gray-500 text-gray-700 px-4 py-2 rounded hover:bg-gray-100">Repositório</a>
               </div>
             </div>
       
@@ -308,40 +306,55 @@
       </section>
       
       
-      <section id="servico" class="d-flex justify-content-center align-items-center vh-100 area-3">
-        <div>
-          <h2 class="text-center mb-5">Serviços</h2>
-          <div class="container__servicos d-flex flex-wrap gap-5">
-            <div class="d-flex flex-column gap-3">
-              <img src="./src/assets/code.svg" alt="Ícone de código">
-              <span>Criação de sites</span>
+      <section id="servicos" class="flex justify-center items-center py-10">
+        <div class="text-center">
+          <h2 class="text-3xl font-semibold text-white mb-8">Serviços</h2>
+          <div class="flex flex-wrap justify-center gap-10">
+            <div class="flex flex-col items-center gap-3 p-6 rounded-lg bg-white text-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="./src/assets/code.svg" alt="Ícone de código" class="w-16 h-16">
+              <span class="text-lg font-medium text-gray-800">Criação de sites</span>
             </div>
-            <div class="d-flex flex-column gap-3">
-              <img src="./src/assets/figma.svg" alt="Ícone do figma">
-              <span>UI Designer</span>
+            <div class="flex flex-col items-center gap-3 p-6 rounded-lg bg-white text-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="./src/assets/figma.svg" alt="Ícone do Figma" class="w-16 h-16">
+              <span class="text-lg font-medium text-gray-800">UI Designer</span>
             </div>
-            <div class="d-flex flex-column gap-3">
-              <img src="./src/assets/smartphone.svg" alt="Ícone do responsivo">
-              <span>Sites Responsivos</span>
+            <div class="flex flex-col items-center gap-3 p-6 rounded-lg bg-white text-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="./src/assets/smartphone.svg" alt="Ícone de sites responsivos" class="w-16 h-16">
+              <span class="text-lg font-medium text-gray-800">Sites Responsivos</span>
             </div>
           </div>
         </div>
       </section>
+      
+      
     </main>
-    <footer class="footer">
-      <p>Desenvolvido por Bruna Carla</p>
+    <footer id="contato" class="footer bg-pink-700 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p class="mb-4">Desenvolvido por Bruna Carla</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="mailto:santiagobruna147@gmail.com" class="text-white hover:text-pink-500" aria-label="E-mail">
+            <i class="fas fa-envelope"></i> E-mail
+          </a>
+          <a href="https://wa.me/5521975956657" target="_blank" class="text-white hover:text-pink-500" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="https://www.linkedin.com/in/brunacribeiro/" target="_blank" class="text-white hover:text-pink-500" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://instagram.com/bruna_dev77" target="_blank" class="text-white hover:text-pink-500" aria-label="Instagram">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
     </footer>
+    
+    
     <script src="./src/script/script.js"></script>
     <script>
       window.addEventListener("load", function () {
         document.body.classList.add("carregado");
       });
     </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
     <script
     type="module"
     src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
