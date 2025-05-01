@@ -9,7 +9,8 @@ Bem-vindo(a) ao meu portfólio criativo e diversificado! Sou apaixonada por tran
 - Ionic -  Framework para desenvolvimento de aplicações mobile híbridas, utilizando tecnologias web como HTML, CSS e JavaScript.
 
 ## Conheça o Projeto
-![portfolio](https://github.com/user-attachments/assets/0bb6b47e-2aa1-4602-8b87-87f108da3ce1)
+![portfolio](https://github.com/user-attachments/assets/1090937d-e2da-47c5-a409-93b0dda00981)
+
   
 ### Link do Projeto
 Clique aqui para visualizar o projeto <https://portfolio-bay-sigma-18.vercel.app/>
